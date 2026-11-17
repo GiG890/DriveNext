@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_bg">#F3EEFA</color>
+    <color name="avatar_bg">#EAEAEA</color>
+    <color name="divider">#E4E4EA</color>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DriveNext.ScreenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/settings_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Профиль пользователя: по нажатию открывается экран «Профиль» -->
+            <LinearLayout
+                android:id="@+id/rowProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/bg_avatar_circle"
+                    android:contentDescription="@string/profile_title"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_person"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.DriveNext.Circle" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/brand_purple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        style="@style/DriveNext.Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_chevron_right" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/rowBookings"
+                layout="@layout/item_settings_row"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <include
+                android:id="@+id/rowTheme"
+                layout="@layout/item_settings_row"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <include
+                android:id="@+id/rowNotifications"
+                layout="@layout/item_settings_row"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <include
+                android:id="@+id/rowAddCar"
+                layout="@layout/item_settings_row"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/divider" />
+
+            <include
+                android:id="@+id/rowHelp"
+                layout="@layout/item_settings_row"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <include
+                android:id="@+id/rowInvite"
+                layout="@layout/item_settings_row"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ВРЕМЕННАЯ заглушка. Чтобы подставить иллюстрацию из макета:
+     удалите этот файл и положите свою картинку в drawable с тем же именем
+     (welcome_illustration.png или .webp / .svg через Vector Asset). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="200dp"
+    android:viewportWidth="240"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#F3DDFB"
+        android:pathData="M120,100m-90,0a90,90 0 1,1 180,0a90,90 0 1,1 -180,0" />
+    <path
+        android:fillColor="#5B95F5"
+        android:pathData="M80,120L95,90H145L160,120Z" />
+    <path
+        android:fillColor="#3D7BEF"
+        android:pathData="M50,120H190Q200,120 200,130V150Q200,160 190,160H50Q40,160 40,150V130Q40,120 50,120Z" />
+    <path
+        android:fillColor="#2D0E47"
+        android:pathData="M80,160m-14,0a14,14 0 1,1 28,0a14,14 0 1,1 -28,0" />
+    <path
+        android:fillColor="#2D0E47"
+        android:pathData="M160,160m-14,0a14,14 0 1,1 28,0a14,14 0 1,1 -28,0" />
+</vector>

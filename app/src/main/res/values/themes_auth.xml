@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Светлая тема экранов авторизации: макет только светлый, поэтому тема не DayNight. -->
+    <style name="Theme.DriveNext.Auth" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorError">@color/error_red</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Поле ввода: рамка 1dp, скругление 8dp, подсказка внутри поля (подпись сверху отдельным TextView). -->
+    <style name="Widget.DriveNext.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/box_stroke_selector</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="Widget.DriveNext.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Widget.DriveNext.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="strokeColor">@color/field_stroke</item>
+    </style>
+
+    <style name="Widget.DriveNext.Button.Link" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/brand_purple</item>
+    </style>
+
+    <style name="DriveNext.Label" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+    <style name="ShapeAppearance.DriveNext.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.DriveNext.Rounded8" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>

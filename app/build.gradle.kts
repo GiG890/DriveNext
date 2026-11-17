@@ -45,8 +45,14 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
 
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("io.coil-kt:coil:2.7.0")
+
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("androidx.viewpager2:viewpager2:1.1.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.activity:activity-ktx:1.9.0")
 }

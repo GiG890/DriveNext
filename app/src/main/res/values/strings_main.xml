@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Нижнее меню -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_bookings">Бронирования</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Главная -->
+    <string name="home_search_hint">Введите марку автомобиля</string>
+    <string name="home_title">Давайте найдем автомобиль</string>
+    <string name="car_price">%1$d₽</string>
+    <string name="car_per_day">в день</string>
+    <string name="btn_book">Забронировать</string>
+    <string name="btn_details">Детали</string>
+    <string name="btn_retry">Повторить</string>
+
+    <!-- Результаты поиска -->
+    <string name="search_results_title">Результаты поиска</string>
+    <string name="search_loading">Ищем подходящие автомобили</string>
+    <string name="search_empty">Ничего не найдено. Попробуйте изменить запрос.</string>
+
+    <!-- Ошибки по ТЗ -->
+    <string name="error_load">Не удалось загрузить данные. Попробуйте снова.</string>
+    <string name="error_search">Не удалось выполнить поиск. Попробуйте снова.</string>
+
+    <!-- Прочие ошибки -->
+    <string name="error_no_connection">Нет подключения к интернету. Проверьте соединение и попробуйте снова.</string>
+    <string name="error_email_not_confirmed">Аккаунт создан, но почта ещё не подтверждена. Перейдите по ссылке из письма и войдите.</string>
+    <string name="error_session_expired">Сессия истекла. Войдите в аккаунт снова.</string>
+    <string name="error_server">Сервер вернул ошибку.</string>
+
+    <!-- Настройки -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_bookings">Мои бронирования</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_notifications">Уведомления</string>
+    <string name="settings_add_car">Подключить свой автомобиль</string>
+    <string name="settings_help">Помощь</string>
+    <string name="settings_invite">Пригласи друга</string>
+    <string name="coming_soon">Этот раздел появится в следующих версиях приложения.</string>
+
+    <!-- Профиль -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_change_avatar">Изменить фото профиля</string>
+    <string name="profile_joined">Присоединился в %1$s %2$d</string>
+    <string name="profile_email">Электронная почта</string>
+    <string name="profile_password">Пароль</string>
+    <string name="profile_change_password">Поменять пароль</string>
+    <string name="profile_gender">Пол</string>
+    <string name="profile_google">Google</string>
+    <string name="profile_google_none">Не подключён</string>
+    <string name="profile_logout">Выйти из профиля</string>
+    <string name="profile_no_value">Не указано</string>
+
+    <!-- Экраны-заглушки (их верстка в следующих работах) -->
+    <string name="bookings_title">Мои бронирования</string>
+    <string name="add_car_title">Подключить свой автомобиль</string>
+    <string name="details_title">Детали</string>
+    <string name="booking_title">Оформление аренды</string>
+    <string name="placeholder_text">Этот экран появится в следующих работах.</string>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_register_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="8dp">
+
+            <FrameLayout
+                android:id="@+id/flAvatar"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@string/auth_add_avatar"
+                android:focusable="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_avatar_placeholder"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.DriveNext.Circle" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_add_circle" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/DriveNext.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/auth_avatar_caption" />
+
+            <TextView
+                style="@style/DriveNext.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_label_license_number" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLicenseNumber"
+                style="@style/Widget.DriveNext.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLicenseNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/auth_hint_license_number"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/text_main"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/DriveNext.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_label_issue_date" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilIssueDate"
+                style="@style/Widget.DriveNext.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIssueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:hint="@string/auth_hint_date"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/text_main"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/DriveNext.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_label_license_photo" />
+
+            <LinearLayout
+                android:id="@+id/rowLicensePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivLicensePhoto"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@string/auth_upload_photo"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_upload"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.DriveNext.Rounded8"
+                    app:strokeColor="@color/field_stroke"
+                    app:strokeWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/tvLicensePhotoStatus"
+                    style="@style/DriveNext.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/auth_upload_photo" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/DriveNext.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_label_passport_photo" />
+
+            <LinearLayout
+                android:id="@+id/rowPassportPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivPassportPhoto"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@string/auth_upload_photo"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_upload"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.DriveNext.Rounded8"
+                    app:strokeColor="@color/field_stroke"
+                    app:strokeWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/tvPassportPhotoStatus"
+                    style="@style/DriveNext.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/auth_upload_photo" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        style="@style/Widget.DriveNext.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:enabled="false"
+        android:text="@string/auth_btn_next" />
+</LinearLayout>

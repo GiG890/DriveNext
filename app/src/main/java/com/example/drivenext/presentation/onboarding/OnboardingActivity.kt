@@ -1,5 +1,6 @@
 package com.example.drivenext.presentation.onboarding
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -12,6 +13,8 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.drivenext.R
 import com.example.drivenext.data.repository.OnboardingRepositoryImpl
 import com.example.drivenext.presentation.login.LoginActivity
+import com.example.drivenext.presentation.welcome.WelcomeActivity
+
 
 class OnboardingActivity : AppCompatActivity() {
 
@@ -76,7 +79,7 @@ class OnboardingActivity : AppCompatActivity() {
 
         viewModel.onboardingFinished.observe(this) { finished ->
             if (finished) {
-                startActivity(Intent(this, LoginActivity::class.java))
+                startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             }
         }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Картинка по умолчанию, пока у машины нет фото -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="64dp"
+    android:viewportWidth="120"
+    android:viewportHeight="64">
+    <path
+        android:fillColor="#D9D9E0"
+        android:pathData="M8,42L22,20Q25,15 31,15L80,15Q86,15 90,19L106,36Q112,38 112,45L112,49Q112,53 108,53L12,53Q8,53 8,49Z" />
+    <path
+        android:fillColor="#F3EEFA"
+        android:pathData="M30,21L50,21L50,34L24,34ZM56,21L80,21L92,34L56,34Z" />
+    <path
+        android:fillColor="#7A7A85"
+        android:pathData="M32,53m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0" />
+    <path
+        android:fillColor="#7A7A85"
+        android:pathData="M90,53m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0" />
+</vector>

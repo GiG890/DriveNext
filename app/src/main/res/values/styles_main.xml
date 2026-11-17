@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Кнопки в карточке автомобиля: ниже, чем основные 52dp -->
+    <style name="Widget.DriveNext.Button.Small" parent="Widget.DriveNext.Button.Primary">
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Widget.DriveNext.Button.OutlinedSmall" parent="Widget.DriveNext.Button.Outlined">
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Заголовок экрана по центру -->
+    <style name="DriveNext.ScreenTitle" parent="">
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Строка меню -->
+    <style name="DriveNext.RowTitle" parent="">
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Разрешение CAMERA НЕ объявляем: TakePicture запускает системную камеру,
+         и тогда runtime-разрешение приложению не нужно. -->
 
     <application
         android:allowBackup="true"
@@ -26,8 +28,34 @@
         </activity>
 
         <activity
+            android:name=".presentation.welcome.WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
             android:name=".presentation.login.LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationStep1Activity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationStep2Activity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationStep3Activity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationSuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
 
         <activity
             android:name=".presentation.onboarding.OnboardingActivity"
@@ -39,7 +67,19 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <!-- FileProvider: даёт камере безопасный Uri для записи снимка -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
     </application>
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Общее -->
+    <string name="auth_brand_name">DriveNext</string>
+    <string name="auth_slogan">Поможем найти твою следующую поездку</string>
+    <string name="auth_btn_login">Войти</string>
+    <string name="auth_btn_register">Зарегистрироваться</string>
+    <string name="auth_btn_next">Далее</string>
+    <string name="auth_back">Назад</string>
+
+    <!-- Вход -->
+    <string name="auth_login_title">Войдите в аккаунт</string>
+    <string name="auth_login_subtitle">Пожалуйста, введите свои данные</string>
+    <string name="auth_label_email">Электронная почта</string>
+    <string name="auth_hint_email">Введите электронную почту</string>
+    <string name="auth_label_password">Пароль</string>
+    <string name="auth_hint_password">Введите пароль</string>
+    <string name="auth_forgot_password">Забыли пароль?</string>
+    <string name="auth_forgot_password_stub">Восстановление пароля пока недоступно</string>
+    <string name="auth_btn_google">Войти через Google</string>
+
+    <!-- Регистрация, шаг 1 -->
+    <string name="auth_register_title">Создать аккаунт</string>
+    <string name="auth_label_new_password">Придумайте пароль</string>
+    <string name="auth_label_repeat_password">Повторите пароль</string>
+    <string name="auth_consent">Я согласен с условиями обслуживания и политикой конфиденциальности</string>
+
+    <!-- Регистрация, шаг 2 -->
+    <string name="auth_label_last_name">Фамилия</string>
+    <string name="auth_hint_last_name">Введите фамилию</string>
+    <string name="auth_label_first_name">Имя</string>
+    <string name="auth_hint_first_name">Введите имя</string>
+    <string name="auth_label_patronymic">Отчество</string>
+    <string name="auth_hint_patronymic">Введите отчество</string>
+    <string name="auth_label_birth_date">Дата рождения</string>
+    <string name="auth_hint_date">DD/MM/YYYY</string>
+    <string name="auth_label_gender">Пол</string>
+    <string name="auth_gender_male">Мужской</string>
+    <string name="auth_gender_female">Женский</string>
+
+    <!-- Регистрация, шаг 3 -->
+    <string name="auth_avatar_caption">Добавление фотографии поможет владельцам и арендаторам узнать друг друга, когда они будут забирать машину</string>
+    <string name="auth_add_avatar">Добавить фото профиля</string>
+    <string name="auth_label_license_number">Номер водительского удостоверения</string>
+    <string name="auth_hint_license_number">0000000000</string>
+    <string name="auth_label_issue_date">Дата выдачи</string>
+    <string name="auth_label_license_photo">Загрузите фото водительского удостоверения</string>
+    <string name="auth_label_passport_photo">Загрузите фото паспорта</string>
+    <string name="auth_upload_photo">Загрузить фото</string>
+    <string name="auth_photo_uploaded">Фото загружено</string>
+    <string name="auth_photo_source_title">Добавить фото</string>
+    <string name="auth_photo_gallery">Выбрать из галереи</string>
+    <string name="auth_photo_camera">Сделать снимок</string>
+
+    <!-- Успешная регистрация -->
+    <string name="auth_success_header">Пользуйтесь с удовольствием</string>
+    <string name="auth_success_title">Поздравляем</string>
+    <string name="auth_success_message">Вы успешно зарегистрировались. Обработка ваших персональных данных займет около двух часов. Спасибо за ожидание.</string>
+
+    <!-- Ошибки по ТЗ -->
+    <string name="auth_error_email">Введите корректный адрес электронной почты.</string>
+    <string name="auth_error_passwords_mismatch">Пароли не совпадают.</string>
+    <string name="auth_error_consent">Необходимо согласиться с условиями обслуживания и политикой конфиденциальности.</string>
+    <string name="auth_error_fill_required">Пожалуйста, заполните все обязательные поля.</string>
+    <string name="auth_error_birth_date">Введите корректную дату рождения.</string>
+    <string name="auth_error_issue_date">Введите корректную дату выдачи.</string>
+    <string name="auth_error_photos_required">Пожалуйста, загрузите все необходимые фото.</string>
+
+    <!-- Ошибки, которых в ТЗ нет, но без них не обойтись -->
+    <string name="auth_error_password_required">Введите пароль.</string>
+    <string name="auth_error_license_length">Номер удостоверения должен содержать 10 символов.</string>
+    <string name="auth_error_email_taken">Пользователь с такой почтой уже зарегистрирован.</string>
+    <string name="auth_error_invalid_credentials">Неверная почта или пароль.</string>
+    <string name="auth_error_google_failed">Не удалось войти через Google. Попробуйте ещё раз.</string>
+    <string name="auth_error_photo_failed">Не удалось открыть фото. Попробуйте другое.</string>
+    <string name="auth_error_camera_unavailable">Камера недоступна на этом устройстве.</string>
+    <string name="auth_error_generic">Что-то пошло не так. Попробуйте ещё раз.</string>
+</resources>

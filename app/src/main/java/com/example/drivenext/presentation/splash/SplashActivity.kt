@@ -1,4 +1,5 @@
 package com.example.drivenext.presentation.splash
+import com.example.drivenext.presentation.welcome.WelcomeActivity
 
 import android.content.Intent
 import android.os.Bundle
@@ -33,7 +34,7 @@ class SplashActivity : AppCompatActivity() {
         viewModel.destination.observe(this) { destination ->
             when (destination) {
                 SplashDestination.ONBOARDING -> navigateTo(OnboardingActivity::class.java)
-                SplashDestination.LOGIN -> navigateTo(LoginActivity::class.java)
+                SplashDestination.LOGIN -> navigateTo(WelcomeActivity::class.java)
                 SplashDestination.MAIN -> navigateTo(MainActivity::class.java)
                 SplashDestination.NO_CONNECTION -> navigateTo(NoConnectionActivity::class.java)
             }

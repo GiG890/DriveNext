@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Разрешение CAMERA НЕ объявляем: TakePicture запускает системную камеру,
+         и тогда runtime-разрешение приложению не нужно. -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DriveNext">
+
+        <activity
+            android:name=".presentation.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DriveNext.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentation.welcome.WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationStep1Activity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationStep2Activity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationStep3Activity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.register.RegistrationSuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DriveNext.Auth" />
+
+        <activity
+            android:name=".presentation.onboarding.OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.noconnection.NoConnectionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- FileProvider: даёт камере безопасный Uri для записи снимка -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

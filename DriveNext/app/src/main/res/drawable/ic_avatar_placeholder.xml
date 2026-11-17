@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- внешний круг -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M48,48m-45,0a45,45 0 1,1 90,0a45,45 0 1,1 -90,0"
+        android:strokeWidth="3"
+        android:strokeColor="#D9D9E0" />
+    <!-- голова -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M48,38m-12,0a12,12 0 1,1 24,0a12,12 0 1,1 -24,0"
+        android:strokeWidth="3"
+        android:strokeColor="#D9D9E0" />
+    <!-- плечи -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M26,78C26,66 36,60 48,60C60,60 70,66 70,78"
+        android:strokeWidth="3"
+        android:strokeColor="#D9D9E0" />
+</vector>
